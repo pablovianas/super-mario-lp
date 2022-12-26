@@ -4,15 +4,13 @@
         justify-content: space-around;
     }
     main .hero{
+        flex-direction: column-reverse;
         justify-content: center;
     }
-    main .hero .imagem-titulo{
-        border-radius: 30%;
-    }
     main .hero .mario-hero{
-        display: none;
+        max-width: 400px;
     }
-
+    
     main .hero .informacoes{
         gap: 50px;
     }
@@ -31,16 +29,18 @@
     header nav{
         display: none;
     }
-    main .hero{
-        height: 75vh;
+    main .hero .mario-hero{
+        max-width: 300px;
     }
-  
-    main .informacoes .descricao{
+
+    main .hero .informacoes .descricao{
         width: 300px;
     }
     main .hero .botao-trailer{
         padding: 14px;
     }
+
+    
     .modal .fechar-modal{
         right: -5px;
         top: -5px;
