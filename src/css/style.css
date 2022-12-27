@@ -6,8 +6,6 @@ body{
     min-height: 100vh;
     font-family: 'SecularOne';
     background-color: var(--cor-fundo-primaria);
-    display: flex;
-    justify-content: center;
 }
 
 .carregando {
@@ -17,15 +15,10 @@ body{
     background: url('../imagens/mario-up.gif') 50% 50% no-repeat var(--cor-fundo-primaria);
 }
 
-.container{
-    max-width: 1440px;
-}
-
 header{
     display: flex;
     justify-content: space-between;
     padding: var(--mobile-padding);
-    
 }
 
 header .logo{
@@ -52,17 +45,21 @@ header nav li a {
     letter-spacing: 1px;
 }
 
-main .hero{
-    text-align: center;
+main{
     display: flex;
-    gap: 40px;
+    min-height: calc(100vh - 132px);
+}
+
+main .hero{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 main .hero .informacoes{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     width: 50%;
     transition: 0.2s;
@@ -70,7 +67,7 @@ main .hero .informacoes{
 
 main .hero .descricao{
     font-family: 'SecularOne';
-    width: 85%;
+    width: 70%;
     font-size: 20px;
 }
 
